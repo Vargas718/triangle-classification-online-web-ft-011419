@@ -14,10 +14,9 @@ class Triangle
       :equilateral
     end 
      
-   
-   
-   
-  end 
+     
+     
+    end 
   
   class Triangleerror < StandardError
   
