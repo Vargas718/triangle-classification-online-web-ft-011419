@@ -18,10 +18,10 @@ class Triangle
       :scalene
      
     elsif @side1 <= 0 || @side2 <= 0 || @side3 <= 0 
-      raise Triangleerror
+      raise TriangleError
     elsif
       @side1 + @side2 > @side3 || @side3 + @side2 > @side1 || @side1 + @side3 > @side2
-      raise Triangleerror
+      raise TriangleError
     else
       triangle.kind = self
     end 
@@ -29,7 +29,7 @@ class Triangle
      
     end 
   
-  class Triangleerror < StandardError
+  class TriangleError < StandardError
   
       
 
